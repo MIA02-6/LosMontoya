@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Pollo a la brasa",
+    "desc": "Pollo jugoso con papas",
+    "price": 25.0,
+    "stock": 10,
+    "img": "images/product1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Arroz con pollo",
+    "desc": "Arroz amarillo con pollo",
+    "price": 20.0,
+    "stock": 5,
+    "img": "images/product2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Causa limeña",
+    "desc": "Causa fría tradicional",
+    "price": 18.0,
+    "stock": 2,
+    "img": "images/product3.jpg"
+  }
+]

@@ -1,0 +1,26 @@
+:root{
+  --bg:#fff7f6;
+  --accent:#f7c6c6;
+  --muted:#6b6b6b;
+}
+body{font-family:Inter, system-ui, Arial; background:linear-gradient(180deg,#fff,#fff7f6); margin:0; color:#222}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:rgba(255,255,255,0.6);backdrop-filter:blur(6px)}
+.logo{height:48px}
+.hero{display:flex;gap:20px;padding:24px;align-items:center}
+.hero-inner{max-width:720px}
+.banners{display:flex;gap:10px; margin-top:12px}
+.banner{flex:1;padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08);cursor:pointer;transition:transform .18s}
+.banner:hover{transform:translateY(-6px)}
+.central-img{width:240px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;padding:16px}
+.product{background:#fff;padding:12px;border-radius:12px;box-shadow:0 8px 16px rgba(0,0,0,0.06)}
+.product img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.product .meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.out{opacity:0.45}
+button{background:var(--accent);border:0;padding:8px 12px;border-radius:10px;cursor:pointer}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center}
+.modal.hidden{display:none}
+.modal-content{background:#fff;padding:18px;border-radius:12px;min-width:320px;max-width:680px;position:relative}
+.close{position:absolute;right:10px;top:8px;background:transparent;font-size:20px}
+.admin{padding:16px;background:#fff;margin:16px;border-radius:12px}
+footer{padding:12px;text-align:center;color:var(--muted)}

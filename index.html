@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Rotisería - TEC PERÚ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/logo.png" alt="logo" class="logo">
+    <nav>
+      <button id="cart-btn">Carrito (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>La Rotisería</h1>
+        <p>Sabores caseros — pedidos rápidos</p>
+        <div class="banners" id="banners">
+          <!-- banners inserted by JS -->
+        </div>
+      </div>
+      <img src="images/central.jpg" alt="Plato principal" class="central-img">
+    </section>
+
+    <section id="products">
+      <h2>Productos</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section id="checkout-modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="close" id="close-checkout">&times;</button>
+        <h3>Checkout</h3>
+        <div id="cart-items"></div>
+        <div id="checkout-form">
+          <h4>Datos de pago (demo)</h4>
+          <form id="pay-form">
+            <label>Nombre del titular
+              <input name="holder" required>
+            </label>
+            <label>Número de tarjeta
+              <input name="card" inputmode="numeric" maxlength="19" placeholder="4111 1111 1111 1111" required>
+            </label>
+            <label>MM/AA
+              <input name="exp" placeholder="12/25" required>
+            </label>
+            <label>CVC
+              <input name="cvc" maxlength="4" required>
+            </label>
+            <button type="submit">Pagar (demostración)</button>
+          </form>
+        </div>
+        <div id="checkout-result"></div>
+      </div>
+    </section>
+
+    <section id="admin-panel" class="admin">
+      <h3>Admin (demo)</h3>
+      <form id="admin-login">
+        <input name="user" placeholder="usuario">
+        <input name="pass" placeholder="contraseña" type="password">
+        <button>Entrar</button>
+      </form>
+      <div id="admin-area" class="hidden">
+        <h4>Gestión de stock</h4>
+        <div id="admin-products"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© La Rotisería - Demo interactivo</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
