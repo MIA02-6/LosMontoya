@@ -1,5 +1,6 @@
 // Frontend JS: fetches products from backend, cart logic, banners and checkout demo
-const API = "/api"; // when deployed, proxy or host backend separately
+const API = "http://127.0.0.1:8000/api";
+ // when deployed, proxy or host backend separately
 
 const banners = [
   {id:1, title:"Promo - 2x1 Pollo", img:"images/banner1.jpg"},
