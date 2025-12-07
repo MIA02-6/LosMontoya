@@ -1,5 +1,5 @@
 // Frontend JS: fetches products from backend, cart logic, banners and checkout demo
-const API = "http://127.0.0.1:8000/api";
+const API = "https://tu-api.onrender.com/api";
  // when deployed, proxy or host backend separately
 
 const banners = [
