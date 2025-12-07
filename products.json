@@ -4,7 +4,7 @@
     "name": "Pollo a la brasa",
     "desc": "Pollo jugoso con papas",
     "price": 25.0,
-    "stock": 10,
+    "stock": 0,
     "img": "images/product1.jpg"
   },
   {
